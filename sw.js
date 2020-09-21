@@ -5,6 +5,7 @@ const staticAssets = [
   "./index.html",
   "./style.css",
   "./app.js",
+  "https://raw.githubusercontent.com/ThePratikSah/1tapchat/master/logo.png"
 ];
 
 self.addEventListener("install", (event) => {
