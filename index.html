@@ -17,7 +17,13 @@
       <h1>oneTapChat by <a href="https://pratiksah.com">Pratik</a></h1>
       <p id="title">India only</p>
       <p id="element" class="mystyle">Invalid input, Try again!</p>
-      <input placeholder="Number you want to chat" id="number" type="tel" />
+      <input
+        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+        maxlength="10"
+        placeholder="Phone number without country code"
+        id="number"
+        type="tel"
+      />
       <button onclick="oneTapChat();">One Tap Chat</button>
     </div>
 
